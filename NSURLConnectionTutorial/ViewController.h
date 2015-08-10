@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *urlTextView;
+@property (weak, nonatomic) IBOutlet UIButton *loadButton;
+@property (weak, nonatomic) IBOutlet UITextView *dataTextView;
+@property (strong, nonatomic) NSMutableData *data;
+
+-(IBAction)load:(id)sender;
 
 @end
 
